@@ -215,6 +215,7 @@ button {
     background-image: url(images/bg-top.svg);
     background-position: right top;
     background-repeat: no-repeat;
+    background-size: 10rem;
   }
   .card .price {
     font-size: 6rem;
@@ -223,11 +224,16 @@ button {
     font-size: 3rem;
   }
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 640px) {
   .container {
     background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
     background-position: right top, left bottom;
     background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
     height: 100dvh;
   }
   .section {
